@@ -1,118 +1,125 @@
 * {
-    margin: 0; /*this is why there is no gap between navbar and the page */
-    padding: 0;
-  }
-  body {
-    background-color:rgb(1, 1, 35);
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: rgb(18, 18, 62);
-  }
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
-  nav ul li {
-    list-style: circle;
-    margin: 0 25px;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: rgb(241, 249, 249);
-  }
-  nav ul li a:hover {
-    color: rgb(146, 70, 217);
-    font-size: 1.02rem;
-  }
+  margin: 0; /*this is why there is no gap between navbar and the page */
+  padding: 0;
+}
+main{
+  width:100%;
+}
+body {
+  width: 100%;
+  height:100vh;
+  margin:0;
+  padding:0;
+  /* background-color: rgb(1, 1, 35); */
+  background: linear-gradient(to right, #011325, #02274c);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background: linear-gradient(to right, #011427, #022e4b);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: circle;
+  margin: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(241, 249, 249);
+}
+nav ul li a:hover {
+  color: rgb(146, 70, 217);
+  font-size: 1.02rem;
+}
 
-  .left {
-    font-size: 1.5rem;
-    margin: 0 10%;
-  }
-  .right {
-    display: flex;
-    margin-right: 10%;
-  }
-  .firstSection {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-  }
-  .firstSection div > {
-    width: 80%;
-  }
+.left {
+  font-size: 1.5rem;
+  margin: 0 10%;
+}
+.right {
+  display: flex;
+  margin-right: 10%;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.firstSection div > {
+  width: 80%;
+}
 
+.leftSection {
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-top: 7%;
+  width: 80%;
+}
+
+.rightSection img {
+  width: 80%;
+  margin-left: 15%;
+}
+.purple {
+  color: rgb(146, 70, 217);
+  font-size: 3rem;
+}
+.div2 {
+  font-size: 2rem;
+}
+#element {
+  color: rgb(146, 70, 217);
+  font-size: 3rem;
+}
+#element2 {
+  font-size: 1.1rem;
+  margin-left: 35%;
+  font-family: cursive;
+}
+.buttons {
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #011325, #02274c);
+  color: white;
+  border-color:white;
+  margin-left: 40px;
+}
+.buttons:hover {
+  color:yellow ;
+  border-color: yellow;
+}
+.secondSection .b {
+  display: flex;
+  align-content: space-between;
+  margin-left: 7%;
+}
+/* Media query for screens smaller than 1300 pixels,this is for mobile responsive */
+@media only screen and (max-width: 1235px) {
   .leftSection {
-    font-size: 2rem;
-    margin-left: 10%;
-    margin-top: 7%;
-    width: 80%;
-  }
-
-  .rightSection img {
-    width: 80%;
-    margin-left: 15%;
+    font-size: 1.5rem;
   }
   .purple {
-    color: rgb(146, 70, 217);
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .div2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #element {
-    color: rgb(146, 70, 217);
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   #element2 {
-    font-size: 1.1rem;
-    margin-left: 35%;
-    font-family: cursive;
+    font-size: 1rem;
+    max-width: fit-content;
+    margin-left: 30%;
   }
-  .buttons {
-    padding: 5px;
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(1, 1, 35);
-    color: rgb(146, 70, 217);
-    border-color: white;
-    margin-left: 40px;
-  }
-  .buttons:hover {
-    background-color: rgb(146, 70, 217);
-    color: white;
-    border-color: black;
-  }
-  .secondSection .b {
-    display: flex;
-    align-content: space-between;
-    margin-left: 20%;
-  }
-  /* Media query for screens smaller than 1300 pixels,this is for mobile responsive */
-  @media only screen and (max-width: 1235px) {
-    .leftSection {
-      font-size: 1.5rem;
-    }
-    .purple {
-      font-size: 1.5rem;
-    }
-    .div2 {
-      font-size: 1.5rem;
-    }
-    #element {
-      font-size: 1.5rem;
-    }
-    #element2 {
-      font-size: 1rem;
-      max-width: fit-content;
-      margin-left: 30%;
-    }
-   @media only screen and(max-width:860px){
+ @media only screen and(max-width:860px){
 
-   }
-  }
+ }
+}
