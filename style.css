@@ -92,8 +92,8 @@ nav ul li a:hover {
   margin-left: 40px;
 }
 .buttons:hover {
-  color:yellow ;
-  border-color: yellow;
+  color:green;
+  border-color:green;
 }
 .secondSection .b {
   display: flex;
