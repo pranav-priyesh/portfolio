@@ -1,7 +1,7 @@
-* {
-  margin: 0; /*this is why there is no gap between navbar and the page */
+ * {
+   margin: 0; /*this is why there is no gap between navbar and the page  */
   padding: 0;
-}
+} 
 main {
   width: 100%;
 }
@@ -16,12 +16,21 @@ body {
   font-family: "Poppins", sans-serif;
   transition: background 1.5s ease;
 }
+.head {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Adjust the gap as needed */
+  padding: 10px; /* Optional: Add padding to create space around the items */
+}
 #light {
-  margin-left: 1494px;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  color: #947be9;
+  color:white;
+}
+#light:hover{
+  
+  color:#96c0e3 ;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -36,35 +45,51 @@ body.dark-mode #element {
 body.dark-mode .purple {
   color: #f4f4f4;
 }
+body.dark-mode #light{
+  color: #2a4d6c;
+
+}
+body.dark-mode #light:hover{
+  color:rgb(146, 70, 217);
+
+}
+body.dark-mode ul li a {
+  color: #2a4d6c;
+  
+}
+body.dark-mode ul li a:hover {
+  color: rgb(146, 70, 217);
+  
+}
 /* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   background: linear-gradient(to right, #011427, #022e4b);
-}
- ul {
-  display: flex;
-  justify-content: center;
+} */
+
+ul{
+  list-style: circle;
+ 
 }
 ul li {
   list-style: circle;
-  margin: 0 25px;
+  margin-left: 1300px;
 }
 ul li a {
   text-decoration: none;
   color: rgb(241, 249, 249);
+  margin-top: 40px;
+  
 }
 ul li a:hover {
-  color: rgb(146, 70, 217);
+  color: #96c0e3;
   font-size: 1.06rem;
-} */
+}
 
 
-/* .right {
-  display: flex;
-  margin-right: 10%;
-} */
+
 .firstSection {
   display: flex;
   justify-content: space-around;
@@ -153,9 +178,9 @@ ul li a:hover {
   margin-top: 190px;
   margin-left: 29%;
 }
-/* Media query for screens smaller than 1300 pixels,this is for mobile responsive */
 
-@media only screen and (max-width:412px) {
+
+@media only screen and (max-width:450px) {
   .purple {
     font-size: 2rem;
   }
@@ -187,4 +212,13 @@ ul li a:hover {
     color: rgb(146, 70, 217);
     font-size: 2rem;
   }
-}
+   ul{
+    margin-left:-255%;
+  } 
+  head{
+    gap:0;
+  }
+  #light{
+    margin-left: -40px;
+  }
+} 
