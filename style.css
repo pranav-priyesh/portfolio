@@ -4,6 +4,8 @@
 } 
 main {
   width: 100%;
+  position: relative;
+  overflow: hidden;/*hides the scroll bar*/
 }
 body {
   width: 100%;
@@ -22,8 +24,10 @@ body {
   align-items: center;
   gap: 60px; /* Adjust the gap as needed */
   width: 100%;
-  /* position: fixed;
-  top: 0; */
+  position: fixed;  
+  top: 0; 
+  left:0;
+
   padding: 10px; /* Optional: Add padding to create space around the items */
 }
 #light {
@@ -89,7 +93,26 @@ body.dark-mode .b4:hover #link {
   color:#2a4d6c
 }
 
+body.dark-mode .res .resume{
+  background-color: #31597b;
+  color:white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border-color:white;
+  width:250px;
+  height: 35px;
+}
 
+
+body.dark-mode .res .resume:hover{
+  background-color: #0f2f4b;
+  color:white;
+  font-size: 1.1rem;
+  border-color:rgb(227, 224, 224);
+  width:245px;
+  height:34px;
+}
 
 
 
@@ -145,6 +168,7 @@ ul li a:hover {
   margin-left: 35%;
   margin-top: 5%;
   width: 80%;
+  position: fixed;
 }
 
 .rightSection img {
@@ -185,6 +209,42 @@ ul li a:hover {
   color: rgb(146, 70, 217);
   font-size: 2.3rem;
 } */
+
+
+.res {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width:100%;
+  margin-top: 60vh;
+ 
+}
+
+.res .resume{
+  background-color:rgb(112, 35, 185) ;
+  color:white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border-color:white;
+  width:250px;
+  height: 35px;
+}
+
+
+.res .resume:hover{
+  background-color:rgb(58, 16, 98) ;
+  color:white;
+  font-size: 1.1rem;
+  border-color:rgb(227, 224, 224);
+  width:245px;
+  height:34px;
+}
+
+
+
+
 
 
 
