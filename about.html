@@ -2,27 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
     <link rel="stylesheet" href="about.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <header>
-        <div class="head1">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            
-        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
     </header>
-     <main>
-        <div class="me">
+
+    <main>
+        <div class="left">
             <img src="prapri.png" alt="">
+            <div><span class="name">Pranav Priyesh</span></div>
         </div>
-        <div><span class="pranav">Pranav Priyesh</span></div>
-    </main> 
-    <footer>
+        <div class="right">
+            <span id="aboutme"></span>
+        </div>
         
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#aboutme", {
+          strings: ["Hello! I am Pranav Priyesh, a Computer Science Engineer eager to embark on a rewarding journey in the world of technology. As a recent graduate, I bring a fresh perspective, a hunger for learning, and a passion for problem-solving."],
+          typeSpeed: 50,
+        });
+      </script>
+    <footer>
+        &copy; 2024 Your Website. All rights reserved.
     </footer>
+    
 </body>
 </html>
